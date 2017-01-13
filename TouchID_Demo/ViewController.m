@@ -20,6 +20,7 @@
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 100)];
     label.text = @"点击屏幕开始\n 指纹输入不对会出现密码";
     label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
     [self.view addSubview:label];
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
